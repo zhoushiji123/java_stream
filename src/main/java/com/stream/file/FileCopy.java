@@ -19,7 +19,7 @@ public class FileCopy {
             fileReader.read(contents);
             fileWriter.write(contents);
             fileWriter.flush();
-        }catch (Exception e){
+        }catch (IOException e){
             e.printStackTrace();
         }finally {
             try{
